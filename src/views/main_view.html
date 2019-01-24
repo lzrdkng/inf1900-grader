@@ -1,7 +1,36 @@
-<root>
-    <p>Hello World!</p>
-    <p>Foo</p>
-    <input type="int" prompt="LUL: " />
-    <p>Bar</p>
-    <p>I quitted Poly so I can be a web designer</p>
-</root>
+<div id="root">
+    <grid>
+        <row>
+            <edit class="linebox header"
+                  default="<Call a function>">
+                Sender email\n\n
+            </edit>
+
+            <edit class="linebox header">
+                Recipient email\n\n
+            </edit>
+        </row>
+
+        <row>
+            <edit class="linebox header">
+                Grading directory\n\n
+            </edit>
+            <edit class="linebox header">
+                Subject\n\n
+            </edit>
+        </row>
+
+        <row>
+            <edit multiline="true"
+                  class="linebox header">
+                Message\n\n
+            </edit>
+        </row>
+
+        <row>
+            <button class="confirm_button linebox">Confirm</button>
+            <button class="abort_button linebox"
+                    on-click="quit()">Abort</button>
+        </row>
+    </grid>
+</div>
